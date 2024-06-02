@@ -1,0 +1,230 @@
+/* *{
+    color:crimson
+} */
+/* this is universal selector */
+#nav{
+    width: auto;
+    height: 100px;
+    background-color: black;
+
+}
+#nav0{
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-right: 100px ;
+}
+#nav1{
+    color: white;
+    /* margin-bottom: 50px; */
+    margin-right: 100px ;
+
+}
+#nav2{
+    color: white;
+    /* margin-bottom: 50px; */
+    margin-right: 600px ;
+}
+#head{
+    color:cadetblue;
+    background-color: darkblue;
+    text-align: center;    
+    /* text-decoration: line-through; */
+    text-decoration: underline;
+    height: 50px;
+    width: 300px;  
+    border-radius: 4px;
+
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: crimson; */
+    /* or we can write the above 3 properties in 1 */
+    border: 5px solid crimson;
+    margin-left: 300px;
+
+}
+a{
+    text-decoration: none;    /* this removes the underline thet comes in the links automatically */
+    color: black; /*by default the pink color can be removed like this */
+}
+/* these are elements selectors, css will give these higher proiority since these are below the universal one */
+body{
+    background-color: bisque;
+}
+button{
+    color:black;
+    background-color:burlywood;
+}
+#eg1{
+    color:#ff00fc; /*hexcode*/
+}/*id selector*/
+#eg2{
+    background-color: blue;
+    color:azure;
+}
+#eg3{
+    background-color: cadetblue;
+    color: lavender;
+}
+
+
+.class1{
+    color:rgb(255, 255, 32); /*rgb*/
+}/*class selector*/
+.class2{
+    color:aqua;
+}
+
+
+#eg4{
+    font-weight: 100;
+    width: 100px;
+    height: 100px;
+    color: aliceblue;
+    text-align: center;
+    text-decoration: wavy;
+    background-color: blue;
+    border: 5px solid crimson;
+    border-radius: 50%;
+}
+#eg5{
+    font-weight: 400;
+    font-weight: 100;
+    width: 100px;
+    height: 100px;
+    color: aliceblue;
+    text-align: center;
+    text-decoration: wavy;
+    background-color: rgb(56, 70, 116);
+    border: 5px dotted rgb(45, 255, 153);
+    border-radius: 20px;
+}
+#eg6{
+    font-weight: 900;
+}
+#eg7{
+    font-weight: 100;
+    width: 200px;
+    height: 100px;
+    color: aliceblue;
+    text-align: center;
+    text-wrap: pretty;
+    text-decoration: wavy;
+    background-color: blue;
+    border: 5px solid crimson;
+    border-radius: 50%;
+}
+
+
+/* font weight determines how bold the text will be 100 to 900 */
+#eg8{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+/* multiple fonts are written because a browser might not have a font in it so if one font fails(left to right) the other will set */
+    font-size: 25px;
+    /* pixels is size of text, default text size is 16px */
+}
+
+#one{
+    font-weight: 20px; 
+    line-height: 40px;    
+/* gap after the line */
+    text-transform: uppercase;
+}
+#two{
+    line-height: normal;    
+
+}
+#four{
+    background-color: cornflowerblue;
+    height: 200px;
+    width: 500px;
+    border-style:dotted;
+    border-width: 18px;
+    border-color: blue;
+    display: inline-block;
+}
+#five{
+    width:min-content;
+    height:auto;
+    background-color: black;
+    color: beige;
+    border-width: 14px;
+    border-color:crimson;
+    border-style: dashed;
+    display: inline-block;
+}
+#tf{
+    width: 200px;
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+    border: 10px solid rgb(128, 124, 145);
+    border-radius: 10px;
+    display: inline-block;
+}
+#r{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: 4px solid white;
+    border-radius: 50%;
+    margin-left: 45px;
+    margin-top: 35px ;
+}
+#y{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 4px solid white;
+    border-radius: 50%;
+    margin-left: 45px;
+    margin-top: 35px ;
+}
+#g{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border: 4px solid white;
+    border-radius: 50%;
+    margin-left: 40px;
+    margin-top: 35px ;
+}
+.rgba{
+    width: 200px;
+    height: 600px;
+    background-color: azure;
+
+}
+#rgba1{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 255, 255, 1);
+    margin-left: 40px;
+    margin-top: 35px ;
+}
+#rgba2{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 255, 255, 0.70);
+    margin-left: 40px;
+    margin-top: 35px ;
+}
+#rgba3{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 255, 255, 0.50);
+    margin-left: 40px;
+    margin-top: 35px ;
+}
+#rgba4{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 255, 255, 0.30);
+    margin-left: 40px;
+    margin-top: 35px ;
+}
+#rgba5{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 255, 255, 0.20);
+    margin-left: 40px;
+    margin-top: 35px ;
+}
