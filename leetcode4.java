@@ -1,32 +1,22 @@
-class Solution {
-    public String convertToBase7(int num) {
-        char[] def = {'0', '1', '2', '3', '4', '5', '6'};
-        int r = 0;
-        String res = "";
-        String result = "";
+import java.util.*;
 
+public class leetcode4 {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the numbers : ");
+        String num1 = sc.next();
+        String num2 = sc.next();
 
-        if(num == 0){
-            return "0";
+        int n = 0;
+        for (int i = 0; i < num1.length(); i++) {
+            n = n * 10 + num1.charAt(i) - '0';
         }
-        else if(num > 0){
-            while(num > 0){
-                r = num%7;
-                res = def[r]+res;
-                num = num/7;
-            }
+        int m = 0;
+        for (int i = 0; i < num2.length(); i++) {
+            m = m * 10 + num2.charAt(i) - '0';
         }
-        else{
-            num = Math.abs(num);
-            while(num > 0){
-                r = num%7;
-                result = def[r]+result;
-                num = num/7;
-            }
-            res = "-"+result;
-
-        }
-
-        return res;
+        int res = n+m;
+        String result = "" +res;
+        System.out.println(result);
     }
 }
